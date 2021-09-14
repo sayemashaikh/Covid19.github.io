@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+section{
+    padding: 100px 0;
+}      
+.max-width{
+    max-width: 1700px;
+    padding: 0 30px;
+    margin: 5px;
+}
+.team-section{
+    overflow: hidden;
+    text-align: center;
+    
+}
+.section .team-section h1{
+    text-transform: uppercase;
+    margin-bottom: 0px;
+    color: black;
+    font-size: 70px; 
+}
+.border{
+    display: block;
+    margin: auto;
+    width: 360px;
+    height: 3px;
+    background: mediumseagreen;
+    margin-bottom: 30px;
+}
+
+html,body{
+  display: grid;
+  height: 100%;
+  place-items: center;
+  text-align: center;
+  background: white;
+}
+.slider{
+  max-width: 1100px;
+  display: flex;
+}
+.slider .card{
+  flex: 1;
+  margin: 0 4px;
+  background: #fff;
+}
+.slider .card .img{
+  height: 300px;
+  width: 100%;
+}
+.slider .card .img img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.slider .card .content{
+  padding: 10px 20px;
+}
+.card .content .title{
+  font-size: 25px;
+  font-weight: 600;
+}
+.card .content .sub-title{
+  font-size: 20px;
+  font-weight: 600;
+  color: mediumseagreen;
+  line-height: 20px;
+}
+.card .content p{
+  text-align: justify;
+  margin: 10px 0;
+}
+.card .content .btn{
+  display: block;
+  text-align: middle;
+  margin: 10px 0;
+}
+.card .content .btn button{
+  background: mediumseagreen;
+  color: #fff;
+  border: none;
+  outline: none;
+  font-size: 17px;
+  padding: 5px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.card .content .btn button:hover{
+  transform: scale(0.9);
+}
+
+/*reviews section*/
+.reviews .circle{
+    width: 200px;
+    height: 200px;
+    background: url(images/prathap.jpg);
+    border-radius: 50%;
+    float: left;
+}
+.reviews .circle1{
+    width: 200px;
+    height: 200px;
+    background: url(images/suneeta.jpg);
+    border-radius: 50%;
+    float: left;
+}
+hr{
+    height: 1px;
+    margin: 30px;
+}
+
+/*awards*/
+body .awards{
+    margin: 0;
+    padding: 0;
+    
+    font-family: sans-serif;
+}
+.awards .container{
+    width: 1280px;
+
+    margin: 70px auto 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.awards .container .box{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background: #ff0;
+    margin: 10px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+.awards .container .box .imgBox{
+    position: relative;
+    overflow: hidden;
+}
+.awards .container .box .imgBox img{
+    max-width: 100%;
+    transition: transform 2s;
+}
+.awards .container .box:hover .imgBox img{
+    transform: scale(1.2);
+}
+.awards .container .box .details{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(0,0,0,.8);
+    transform: scaleY(0);
+    transition: transform .5s;
+}
+.awards .container .box:hover .details{
+    transform: scaleY(1);
+}
+.awards .container .box .details .content{
+    position: absolute;
+    top: 50%;
+    transform:translateY(-50%);
+    text-align: center;
+    padding: 15px;
+    color: #fff;
+}
+.awards .container .box .details .content  h2{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    color: mediumseagreen;
+}
+.awards .container .box .details .content p{
+    margin: 10px 0 0;
+    padding: 0;
+    
+}
+/*public*/
+* .testimonials {
+  margin: 10;
+  padding: 5;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+ html,body.testimonials{
+  display: grid;
+  height: 100%;
+  place-items: center;
+ 
+}
+::selection{
+
+}
+.testimonials .wrapper{
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.testimonials .wrapper .box{
+  background: #fff;
+  width: calc(33% - 10px);
+  padding: 25px;
+  border-radius: 3px;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.15);
+}
+.testimonials .wrapper .box i.quote{
+  font-size: 20px;
+  color: seagreen;
+}
+.testimonials .wrapper .box .content{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+.testimonials .box .info .name{
+  font-weight: 600;
+  font-size: 17px;
+}
+.testimonials .box .info .job{
+  font-size: 16px;
+  font-weight: 500;
+  color:mediumseagreen;
+}
+.testimonials .box .info .stars{
+  margin-top: 2px;
+}
+.testimonials .box .info .stars i{
+  color: mediumseagreen;
+}
+.box .content .image{
+  height: 75px;
+  width: 75px;
+  padding: 3px;
+  background: mediumseagreen;
+  border-radius: 50%;
+}
+.testimonials .content .image img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+.testimonials .box:hover .content .image img{
+  border-color: #fff;
+}
+
+@media (max-width: 1045px) {
+ .testimonials .wrapper .box{
+    width: calc(50% - 10px);
+    margin: 10px 0;
+  }
+}
+@media (max-width: 702px) {
+  .testimonials .wrapper .box{
+    width: 100%;
+  }
+}
+/* footer section styling */
+footer{
+    background: #111;
+    padding: 15px 760px;
+    color: #fff;
+    text-align: center;
+}
+footer span a{
+    color: mediumseagreen;
+    text-decoration: none;
+}
+footer span a:hover{
+    text-decoration: underline;
+}
